@@ -1,7 +1,7 @@
 var express    = require('express');
 var bodyParser = require('body-parser');
 var mongoose   = require('mongoose');
-var Account       = require('../models/account');
+var Account    = require('../models/account');
 var Deposit={};
 Deposit.deposit = function(router){
   router.route('/deposit/').post(function(req, res) {

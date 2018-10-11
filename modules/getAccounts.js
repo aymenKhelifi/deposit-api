@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var mongoose   = require('mongoose');
 var Account       = require('../models/account');
 var getAccounts={};
- getAccounts.getaccounts = function(router){
+getAccounts.getaccounts = function(router){
   router.route('/list_accounts').get(function(req, res) {
   Account.find(function(err, accounts) {
       if (err)
